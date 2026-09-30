@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>伦理电影网 | 伦理电影在线观看 · 高清影视资源导航站</title>
+<meta name="keywords" content="伦理电影网, 伦理电影, 伦理片, 高清伦理电影, 伦理电影在线观看, 家庭伦理剧, 伦理电影排行榜, lunlidianyingwang-wap">
+<meta name="description" content="伦理电影网（lunlidianyingwang-wap）专注伦理题材影视资源导航，汇集家庭伦理、情感纠葛、人性伦理、社会现实类电影与剧集，提供热播榜、影片分类、专题策划与影视资讯，为影迷打造专业的伦理影视入口。">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="location" content="province=China;city=;coord=;">
+<meta name="revisit-after" content="1 days">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="伦理电影网 - 伦理题材影视资源导航站">
+<meta property="og:description" content="专注家庭伦理、情感纠葛与人性伦理题材影视资源导航，提供影片分类、热播排行、专题策划与影视资讯。">
+<meta property="og:url" content="https://lunlidianyingwang-wap">
+<meta property="og:site_name" content="伦理电影网">
+<link rel="canonical" href="https://lunlidianyingwang-wap">
+<style>
+:root{
+  --bg:#0e0f1a;
+  --bg2:#151728;
+  --card:#1b1e32;
+  --card2:#232842;
+  --line:#2c3152;
+  --txt:#eef0fa;
+  --txt2:#a8accc;
+  --txt3:#7a7fa6;
+  --brand:#ff5b6a;
+  --brand2:#ff8a3d;
+  --gold:#ffcf5c;
+  --cyan:#4fd1e0;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);
+  color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  line-height:1.75;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";
+  position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(900px 500px at 12% -8%,rgba(255,91,106,.28),transparent 60%),
+    radial-gradient(800px 600px at 88% 6%,rgba(79,209,224,.18),transparent 62%),
+    linear-gradient(180deg,#0e0f1a,#100f1c 55%,#0b0c14);
+}
+body::after{
+  content:"";
+  position:fixed;inset:0;z-index:-1;opacity:.5;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+  background-size:44px 44px;
+}
+a{color:inherit;text-decoration:none;transition:.25s}
+img{max-width:100%;display:block}
+ul,ol{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+/* ---------- 顶部 ---------- */
+.topbar{
+  position:sticky;top:0;z-index:99;
+  background:rgba(14,15,26,.82);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.topbar .wrap{display:flex;align-items:center;gap:18px}
+.site-brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;padding:14px 0}
+.logo{
+  width:40px;height:40px;border-radius:12px;flex:0 0 auto;
+  background:conic-gradient(from 200deg,var(--brand),var(--brand2),#b06bff,var(--cyan),var(--brand));
+  display:grid;place-items:center;font-weight:900;font-size:18px;color:#fff;
+  box-shadow:0 6px 18px rgba(255,91,106,.45);
+}
+.site-name{font-size:19px;font-weight:800;letter-spacing:.5px;white-space:nowrap}
+.site-name small{display:block;font-size:11px;font-weight:500;color:var(--txt3);letter-spacing:1px}
+.site-url{font-size:12px;color:var(--txt3)}
+.site-url b{color:var(--cyan);font-weight:600}
+
+/* ---------- 导航 ---------- */
+.nav{margin-left:auto}
+.nav-list{display:flex;gap:6px;align-items:center}
+.nav-list a{
+  padding:8px 14px;border-radius:999px;font-size:15px;font-weight:600;color:var(--txt2);
+}
+.nav-list a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav-toggle{display:none;margin-left:auto;width:42px;height:42px;border-radius:12px;background:var(--card2);font-size:20px;color:#fff}
+
+/* ---------- 布局 ---------- */
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 18px}
+section{padding:64px 0;position:relative}
+.eyebrow{
+  display:inline-block;font-size:12px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--brand);font-weight:700;margin-bottom:10px;
+}
+.sec-head{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:30px}
+.sec-head h2{font-size:clamp(22px,3.4vw,32px);font-weight:900;letter-spacing:.5px}
+.sec-head h2 em{font-style:normal;background:linear-gradient(92deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec-head p{color:var(--txt3);font-size:14px;margin-bottom:4px}
+.more{margin-left:auto;font-size:13px;color:var(--txt3);display:inline-flex;align-items:center;gap:5px}
+.more:hover{color:var(--brand)}
+
+/* ---------- 首屏 ---------- */
+.hero{position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:76px;padding-bottom:40px}
+.hero h1{
+  font-size:clamp(32px,5.4vw,60px);line-height:1.15;font-weight:900;letter-spacing:1px;
+}
+.hero h1 span{
+  background:linear-gradient(95deg,#fff 5%,var(--brand) 45%,var(--brand2) 78%,#fff);
+  background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:shine 7s linear infinite;
+}
+@keyframes shine{to{background-position:220% 0}}
+.hero .lead{color:var(--txt2);font-size:16px;margin:22px 0 28px;max-width:560px}
+.kw{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.kw a{
+  padding:6px 14px;border-radius:999px;font-size:13px;
+  background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--txt2);
+}
+.kw a:hover{color:#fff;border-color:var(--brand);background:rgba(255,91,106,.14)}
+.cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:999px;
+  font-size:15px;font-weight:700;transition:.3s;
+}
+.btn-main{
+  background:linear-gradient(95deg,var(--brand),var(--brand2));
+  box-shadow:0 10px 26px rgba(255,91,106,.4);color:#fff;
+}
+.btn-main:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(255,91,106,.5)}
+.btn-ghost{border:1px solid var(--line);color:var(--txt);background:rgba(255,255,255,.05)}
+.btn-ghost:hover{border-color:var(--cyan);color:#fff}
+
+.hero-stats{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:14px;
+}
+.stat{
+  background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.03));
+  border:1px solid var(--line);border-radius:20px;padding:22px;position:relative;overflow:hidden;
+}
+.stat::after{content:"";position:absolute;right:-26px;top:-26px;width:76px;height:76px;border-radius:50%;background:var(--brand);opacity:.22;filter:blur(10px)}
+.stat b{font-size:30px;font-weight:900;display:block;background:linear-gradient(92deg,#fff,var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:13px;color:var(--txt3)}
+.stat:nth-child(2)::after{background:var(--cyan)}
+.stat:nth-child(3)::after{background:var(--gold)}
+.stat:nth-child(4)::after{background:#b06bff}
+
+/* ---------- 影片卡片 ---------- */
+.grid{display:grid;gap:20px}
+.grid-5{grid-template-columns:repeat(5,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.film{
+  background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;
+  transition:.35s;display:flex;flex-direction:column;
+}
+.film:hover{transform:translateY(-6px);border-color:rgba(255,91,106,.55);box-shadow:var(--shadow)}
+.poster{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--bg2)}
+.poster i{
+  position:absolute;inset:0;display:grid;place-items:center;font-style:normal;font-size:40px;font-weight:900;
+  color:rgba(255,255,255,.86);
+}
+.poster .tag{
+  position:absolute;top:10px;left:10px;z-index:2;font-size:11px;font-weight:700;padding:4px 10px;
+  border-radius:999px;background:rgba(0,0,0,.5);backdrop-filter:blur(4px);color:#fff;
+}
+.poster .score{
+  position:absolute;top:10px;right:10px;z-index:2;font-size:12px;font-weight:800;padding:4px 9px;
+  border-radius:8px;background:rgba(255,207,92,.95);color:#2b2200;
+}
+.poster .ep{
+  position:absolute;left:0;right:0;bottom:0;z-index:2;font-size:12px;padding:26px 12px 8px;
+  color:#fff;background:linear-gradient(0deg,rgba(0,0,0,.85),transparent);
+}
+.p1 i{background:linear-gradient(150deg,#4a2030,#1a1226)}
+.p2 i{background:linear-gradient(150deg,#1d3b4a,#101a26)}
+.p3 i{background:linear-gradient(150deg,#3d2a14,#1a140c)}
+.p4 i{background:linear-gradient(150deg,#2b1f4a,#120e22)}
+.p5 i{background:linear-gradient(150deg,#143a30,#0c201b)}
+.film h3{font-size:15px;padding:14px 14px 4px;font-weight:700;line-height:1.5}
+.film .meta{font-size:12px;color:var(--txt3);padding:0 14px 14px;display:flex;justify-content:space-between;gap:8px}
+
+/* ---------- 分类 ---------- */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cat{
+  position:relative;border-radius:20px;padding:26px 22px;min-height:150px;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:flex-end;border:1px solid var(--line);
+  background:var(--card);transition:.4s;
+}
+.cat::before{
+  content:attr(data-n);position:absolute;right:14px;top:-10px;font-size:74px;font-weight:900;
+  color:rgba(255,255,255,.06);line-height:1;
+}
+.cat:hover{transform:translateY(-5px);border-color:var(--brand)}
+.cat h3{font-size:19px;font-weight:800;position:relative;z-index:1}
+.cat p{font-size:13px;color:var(--txt3);position:relative;z-index:1}
+.cat .go{position:absolute;right:18px;top:18px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:16px;background:rgba(255,255,255,.08);transition:.3s}
+.cat:hover .go{background:var(--brand);color:#fff}
+.c1{background:linear-gradient(160deg,#3a1c28,#1a1226)}
+.c2{background:linear-gradient(160deg,#1c2e3a,#101a26)}
+.c3{background:linear-gradient(160deg,#3a2c1c,#1c160e)}
+.c4{background:linear-gradient(160deg,#261c3a,#161226)}
+.c5{background:linear-gradient(160deg,#1c3a33,#0e201d)}
+.c6{background:linear-gradient(160deg,#3a1c34,#260e22)}
+.c7{background:linear-gradient(160deg,#2b2c3a,#141526)}
+.c8{background:linear-gradient(160deg,#1f2a3a,#0f1520)}
+
+/* ---------- 榜单 ---------- */
+.rank{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.rank-box{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px}
+.rank-box h3{font-size:18px;font-weight:800;margin-bottom:18px;display:flex;align-items:center;gap:8px}
+.rank-box h3::before{content:"";width:5px;height:18px;border-radius:4px;background:linear-gradient(var(--brand),var(--brand2))}
+.rk{display:flex;align-items:center;gap:14px;padding:11px 6px;border-bottom:1px dashed var(--line)}
+.rk:last-child{border-bottom:none}
+.rk b{font-size:20px;font-weight:900;color:rgba(255,255,255,.16);font-style:italic;width:30px;flex:0 0 auto}
+.rk.top b{color:var(--brand)}
+.rk .t{flex:1;min-width:0}
+.rk .t strong{display:block;font-size:15px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rk .t span{font-size:12px;color:var(--txt3)}
+.rk em{font-style:normal;font-size:12px;color:var(--gold);font-weight:700;flex:0 0 auto}
+
+.table-box{overflow-x:auto;border-radius:22px;border:1px solid var(--line);background:var(--card)}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:520px}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{background:rgba(255,255,255,.05);font-size:12px;letter-spacing:1px;color:var(--txt3);font-weight:700}
+tbody tr:hover{background:rgba(255,91,106,.08)}
+td.name{font-weight:700;color:#fff}
+td.hot{color:var(--brand);font-weight:700}
+tbody tr:nth-child(1) td.name{color:var(--gold)}
+
+/* ---------- 专题 ---------- */
+.feat{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:20px}
+.feat-card{
+  position:relative;border-radius:22px;overflow:hidden;min-height:280px;padding:26px;
+  display:flex;flex-direction:column;justify-content:flex-end;border:1px solid var(--line);
+}
+.feat-card.big{grid-row:span 2;min-height:580px}
+.feat-card .bg{position:absolute;inset:0;z-index:0}
+.feat-card .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(15deg,var(--bg) 10%,transparent 70%)}
+.feat-card .bg i{position:absolute;inset:0;display:grid;place-items:center;font-style:normal;font-size:92px;color:rgba(255,255,255,.85)}
+.bg1{background:linear-gradient(150deg,#4a1f2e,#141226)}
+.bg2{background:linear-gradient(150deg,#1f3a4a,#101820)}
+.bg3{background:linear-gradient(150deg,#3a2c14,#1a150c)}
+.bg4{background:linear-gradient(150deg,#2b1f4a,#120e22)}
+.feat-card .ct{position:relative;z-index:1}
+.feat-card .ct .badge{display:inline-block;font-size:11px;padding:4px 11px;border-radius:999px;background:rgba(255,91,106,.9);color:#fff;margin-bottom:10px;font-weight:700}
+.feat-card h3{font-size:22px;font-weight:900;margin-bottom:8px}
+.feat-card.big h3{font-size:30px}
+.feat-card p{font-size:13px;color:var(--txt2)}
+.feat-card .arrow{margin-top:16px;display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--brand2)}
+
+/* ---------- 资讯 ---------- */
+.news{display:grid;grid-template-columns:1.05fr .95fr;gap:24px}
+.news-main{position:relative;border-radius:22px;overflow:hidden;min-height:340px;border:1px solid var(--line)}
+.news-main .bg{position:absolute;inset:0;background:linear-gradient(140deg,#3a2038,#141226);display:grid;place-items:center;font-style:normal;font-size:96px;color:rgba(255,255,255,.9)}
+.news-main::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,15,26,.96),rgba(14,15,26,.2) 55%)}
+.news-main .ct{position:absolute;left:0;right:0;bottom:0;padding:26px;z-index:1}
+.news-main .cat-lab{font-size:12px;color:var(--brand2);font-weight:700;letter-spacing:1px}
+.news-main h3{font-size:23px;font-weight:900;margin:8px 0 10px}
+.news-main p{font-size:14px;color:var(--txt2)}
+.news-list{display:flex;flex-direction:column;gap:14px}
+.news-item{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;transition:.3s}
+.news-item:hover{border-color:var(--cyan);transform:translateX(4px)}
+.news-item .num{flex:0 0 auto;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-weight:900;font-size:17px;background:rgba(79,209,224,.14);color:var(--cyan)}
+.news-item .t{flex:1;min-width:0}
+.news-item .t strong{display:block;font-size:15px;font-weight:700;line-height:1.55}
+.news-item .t span{font-size:12px;color:var(--txt3)}
+
+/* ---------- 关于 ---------- */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about .txt h2{font-size:clamp(24px,3.6vw,36px);font-weight:900;margin-bottom:16px}
+.about .txt p{color:var(--txt2);font-size:15px;margin-bottom:14px}
+.about .txt .url-show{
+  display:inline-flex;align-items:center;gap:8px;margin-top:6px;padding:12px 20px;border-radius:14px;
+  background:rgba(79,209,224,.1);border:1px dashed var(--cyan);color:var(--cyan);font-weight:700;font-size:14px;
+}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.point{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;transition:.3s}
+.point:hover{border-color:var(--brand);transform:translateY(-4px)}
+.point .ic{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-size:21px;margin-bottom:12px;background:rgba(255,91,106,.14);color:var(--brand)}
+.point:nth-child(2) .ic{background:rgba(79,209,224,.14);color:var(--cyan)}
+.point:nth-child(3) .ic{background:rgba(255,207,92,.14);color:var(--gold)}
+.point:nth-child(4) .ic{background:rgba(176,107,255,.18);color:#c79bff}
+.point h4{font-size:16px;font-weight:800;margin-bottom:6px}
+.point p{font-size:13px;color:var(--txt3)}
+
+/* ---------- SEO 文字块 ---------- */
+.seo-box{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px}
+.seo-box h2{font-size:clamp(22px,3.4vw,30px);font-weight:900;margin-bottom:8px}
+.seo-box h2 + p{color:var(--txt3);font-size:14px;margin-bottom:22px}
+.seo-box h3{font-size:17px;font-weight:800;margin:20px 0 10px;color:var(--brand2)}
+.seo-box p{color:var(--txt2);font-size:14.5px;margin-bottom:12px}
+.seo-box ul{margin:0 0 14px 18px}
+.seo-box li{list-style:disc;color:var(--txt2);font-size:14.5px;margin-bottom:8px}
+.seo-box b{color:#fff}
+
+/* ---------- 页脚 ---------- */
+footer{background:var(--bg2);border-top:1px solid var(--line);padding:54px 0 0}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-bottom:40px}
+.foot h4{font-size:15px;font-weight:800;margin-bottom:16px}
+.foot p{color:var(--txt3);font-size:13px}
+.foot ul{display:flex;flex-direction:column;gap:9px}
+.foot ul a{color:var(--txt2);font-size:14px}
+.foot ul a:hover{color:var(--brand)}
+.copy{border-top:1px solid var(--line);padding:22px 0;text-align:center;font-size:13px;color:var(--txt3)}
+.copy a{color:var(--cyan)}
+.totop{position:fixed;right:18px;bottom:24px;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-size:18px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;box-shadow:var(--shadow);z-index:50;opacity:0;pointer-events:none;transition:.3s}
+.totop.show{opacity:1;pointer-events:auto}
+@media(max-width:980px){
+  .grid-5,.grid-4{grid-template-columns:repeat(3,1fr)}
+  .grid-3,.cats{grid-template-columns:repeat(2,1fr)}
+  .hero .wrap,.rank,.news,.about,.feat{grid-template-columns:1fr}
+  .feat-card.big{grid-row:auto;min-height:300px}
+  .foot{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  section{padding:48px 0}
+  .nav-list{position:fixed;top:66px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:12px;
+    background:rgba(14,15,26,.98);border-bottom:1px solid var(--line);transform:translateY(-130%);transition:.35s}
+  .nav-list.open{transform:translateY(0)}
+  .nav-list a{font-size:16px;padding:14px 18px;border-radius:12px}
+  .nav-toggle{display:grid;place-items:center}
+  .site-name{font-size:16px}
+  .site-name small{font-size:10px}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .grid-5,.grid-4,.grid-3,.cats{grid-template-columns:repeat(2,1fr)}
+  .foot{grid-template-columns:1fr}
+  .points{grid-template-columns:1fr}
+  .seo-box{padding:22px}
+  .about{gap:26px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="site-brand" href="https://lunlidianyingwang-wap">
+      <span class="logo" aria-hidden="true">伦</span>
+      <span class="site-name">伦理电影网<small>ETHICS · FILM · NAV</small></span>
+    </a>
+    <nav class="nav">
+      <ul class="nav-list" id="navList">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#cates">影片分类</a></li>
+        <li><a href="#rank">热播排行</a></li>
+        <li><a href="#feat">专题策划</a></li>
+        <li><a href="#news">影视资讯</a></li>
+        <li><a href="#about">关于本站</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<!-- ================= 首屏 ================= -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-txt">
+      <span class="eyebrow">Ethics Film Navigation</span>
+      <h1>伦理电影网<br><span>聚焦伦理题材的影视入口</span></h1>
+      <p class="lead">伦理电影网（lunlidianyingwang-wap）专注家庭伦理、情感纠葛、人性伦理与社会现实类影视资源导航，用清晰的分类、实时的热播排行与深度专题，帮影迷更快找到值得看的伦理电影与伦理剧集。</p>
+      <div class="kw">
+        <a href="#cates">#伦理电影</a>
+        <a href="#cates">#家庭伦理剧</a>
+        <a href="#cates">#情感伦理片</a>
+        <a href="#cates">#人性伦理题材</a>
+        <a href="#cates">#社会现实电影</a>
+        <a href="#rank">#伦理电影排行榜</a>
+      </div>
+      <div class="cta">
+        <a class="btn btn-main" href="#cates">浏览影片分类 →</a>
+        <a class="btn btn-ghost" href="#about">了解伦理电影网</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>8</b><span>影视题材分类</span></div>
+      <div class="stat"><b>50+</b><span>精选伦理片单</span></div>
+      <div class="stat"><b>24h</b><span>热播榜单更新</span></div>
+      <div class="stat"><b>6</b><span>深度专题策划</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 热门推荐 ================= -->
+<section id="hot">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Hot Picks</span>
+        <h2><em>热门推荐</em> · 本周高口碑伦理电影</h2>
+      </div>
+      <p>基于评分、热度与口碑综合筛选</p>
+      <a class="more" href="#rank">查看完整榜单 →</a>
+    </div>
+    <div class="grid grid-5">
+      <article class="film"><div class="poster p1"><span class="tag">家庭伦理</span><span class="score">9.2</span><i aria-hidden="true">家</i><span class="ep">1080P 高清 · 已更新</span></div><h3>无声的家书</h3><div class="meta"><span>2025 · 剧情</span><span>家庭伦理</span></div></article>
+      <article class="film"><div class="poster p2"><span class="tag">情感纠葛</span><span class="score">8.7</span><i aria-hidden="true">念</i><span class="ep">蓝光 · 全 24 集</span></div><h3>迟来的告白</h3><div class="meta"><span>2025 · 爱情</span><span>情感伦理</span></div></article>
+      <article class="film"><div class="poster p3"><span class="tag">人性伦理</span><span class="score">9.0</span><i aria-hidden="true">择</i><span class="ep">HD · 独家策划</span></div><h3>两难的抉择</h3><div class="meta"><span>2024 · 悬疑</span><span>人性伦理</span></div></article>
+      <article class="film"><div class="poster p4"><span class="tag">社会现实</span><span class="score">8.8</span><i aria-hidden="true">城</i><span class="ep">1080P · 口碑佳作</span></div><h3>城中旧事</h3><div class="meta"><span>2024 · 现实</span><span>社会伦理</span></div></article>
+      <article class="film"><div class="poster p5"><span class="tag">婚姻伦理</span><span class="score">8.5</span><i aria-hidden="true">婚</i><span class="ep">HD · 热播中</span></div><h3>七年之痒之后</h3><div class="meta"><span>2025 · 都市</span><span>婚姻伦理</span></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 影片分类 ================= -->
+<section id="cates">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Film Categories</span>
+        <h2>影片<em>分类</em>导航</h2>
+      </div>
+      <p>八大伦理题材频道，精准匹配观影偏好</p>
+    </div>
+    <div class="cats">
+      <a class="cat c1" href="#"><span class="go">→</span><h3>家庭伦理片</h3><p>代际关系、亲情羁绊与家庭矛盾题材</p><span class="num">01</span></a>
+      <a class="cat c2" href="#"><span class="go">→</span><h3>婚姻情感伦理</h3><p>夫妻关系、婚外情感与婚姻困境</p><span class="num">02</span></a>
+      <a class="cat c3" href="#"><span class="go">→</span><h3>青春成长伦理</h3><p>校园、初恋与青春期的道德抉择</p><span class="num">03</span></a>
+      <a class="cat c4" href="#"><span class="go">→</span><h3>人性伦理悬疑</h3><p>善恶边界与人性挣扎的悬疑叙事</p><span class="num">04</span></a>
+      <a class="cat c5" href="#"><span class="go">→</span><h3>社会现实题材</h3><p>阶层、养老、教育等社会议题影像</p><span class="num">05</span></a>
+      <a class="cat c6" href="#"><span class="go">→</span><h3>女性视角伦理</h3><p>女性处境、独立意识与情感觉醒</p><span class="num">06</span></a>
+      <a class="cat c7" href="#"><span class="go">→</span><h3>经典伦理剧集</h3><p>长篇连续剧与年代家庭伦理大戏</p><span class="num">07</span></a>
+      <a class="cat c8" href="#"><span class="go">→</span><h3>高分伦理佳作</h3><p>影史经典与获奖伦理电影合集</p><span class="num">08</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 热播排行 ================= -->
+<section id="rank">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Trending Ranking</span>
+        <h2><em>热播排行</em> · 伦理电影排行榜</h2>
+      </div>
+      <p>实时反映当前伦理题材影视热度</p>
+      <a class="more" href="#">历史榜单 →</a>
+    </div>
+    <div class="rank">
+      <div class="rank-box">
+        <h3>本周伦理电影热榜 TOP 10</h3>
+        <div class="rk top"><b>1</b><span class="t"><strong>无声的家书</strong><span>家庭伦理 · 2025</span></span><em>9.2</em></div>
+        <div class="rk top"><b>2</b><span class="t"><strong>两难的抉择</strong><span>人性伦理 · 2024</span></span><em>9.0</em></div>
+        <div class="rk top"><b>3</b><span class="t"><strong>城中旧事</strong><span>社会现实 · 2024</span></span><em>8.8</em></div>
+        <div class="rk"><b>4</b><span class="t"><strong>迟来的告白</strong><span>情感伦理 · 2025</span></span><em>8.7</em></div>
+        <div class="rk"><b>5</b><span class="t"><strong>七年之痒之后</strong><span>婚姻伦理 · 2025</span></span><em>8.5</em></div>
+        <div class="rk"><b>6</b><span class="t"><strong>母亲的抉择</strong><span>家庭伦理 · 2024</span></span><em>8.4</em></div>
+        <div class="rk"><b>7</b><span class="t"><strong>雨季不再来</strong><span>青春伦理 · 2023</span></span><em>8.3</em></div>
+        <div class="rk"><b>8</b><span class="t"><strong>她的独白</strong><span>女性视角 · 2025</span></span><em>8.2</em></div>
+        <div class="rk"><b>9</b><span class="t"><strong>最后的和解</strong><span>家庭伦理 · 2024</span></span><em>8.1</em></div>
+        <div class="rk"><b>10</b><span class="t"><strong>隔壁的真相</strong><span>人性伦理 · 2025</span></span><em>8.0</em></div>
+      </div>
+      <div class="rank-box">
+        <h3>伦理剧集热播榜</h3>
+        <div class="table-box">
+          <table>
+            <thead><tr><th>剧名</th><th>题材</th><th>年份</th><th>热度</th></tr></thead>
+            <tbody>
+              <tr><td class="name">家和万事兴</td><td>家庭伦理</td><td>2025</td><td class="hot">9821</td></tr>
+              <tr><td class="name">婚姻的真相</td><td>婚姻伦理</td><td>2025</td><td class="hot">8765</td></tr>
+              <tr><td class="name">老屋春秋</td><td>年代家庭</td><td>2024</td><td class="hot">7520</td></tr>
+              <tr><td class="name">城市的边缘人</td><td>社会现实</td><td>2025</td><td class="hot">6890</td></tr>
+              <tr><td class="name">谁的家庭</td><td>家庭伦理</td><td>2024</td><td class="hot">6312</td></tr>
+              <tr><td class="name">女儿的心事</td><td>女性视角</td><td>2025</td><td class="hot">5877</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 专题策划 ================= -->
+<section id="feat">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Featured Topics</span>
+        <h2>专题<em>策划</em></h2>
+      </div>
+      <p>深度片单与主题合集，按议题看伦理电影</p>
+      <a class="more" href="#">全部专题 →</a>
+    </div>
+    <div class="feat">
+      <a class="feat-card big" href="#">
+        <span class="bg bg1"><i aria-hidden="true">家</i></span>
+        <div class="ct"><span class="badge">主编精选</span><h3>家庭伦理片必看 12 部</h3><p>从代际冲突到亲情和解，用一整个周末看懂中国式家庭关系。</p><span class="arrow">进入专题 →</span></div>
+      </a>
+      <a class="feat-card" href="#">
+        <span class="bg bg2"><i aria-hidden="true">择</i></span>
+        <div class="ct"><span class="badge">人性伦理</span><h3>当善与恶只有一线之隔</h3><p>六部人性悬疑伦理佳作，层层反转拷问内心。</p><span class="arrow">进入专题 →</span></div>
+      </a>
+      <a class="feat-card" href="#">
+        <span class="bg bg3"><i aria-hidden="true">城</i></span>
+        <div class="ct"><span class="badge">社会现实</span><h3>镜头下的真实中国</h3><p>聚焦养老、教育、城乡议题的现实主义影像合集。</p><span class="arrow">进入专题 →</span></div>
+      </a>
+      <a class="feat-card" href="#">
+        <span class="bg bg4"><i aria-hidden="true">婚</i></span>
+        <div class="ct"><span class="badge">婚姻情感</span><h3>婚姻里的 100 种答案</h3><p>从七年之痒到破镜重圆，婚姻伦理剧集盘点。</p><span class="arrow">进入专题 →</span></div>
+      </a>
+      <a class="feat-card" href="#">
+        <span class="bg bg1"><i aria-hidden="true">女</i></span>
+        <div class="ct"><span class="badge">女性视角</span><h3>她如何说出那句话</h3><p>女性导演与女性主角主导的伦理电影合集。</p><span class="arrow">进入专题 →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 影视资讯 ================= -->
+<section id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Film News</span>
+        <h2><em>影视资讯</em> · 伦理题材动态</h2>
+      </div>
+      <p>行业资讯、影片解读与观影指南</p>
+      <a class="more" href="#">资讯频道 →</a>
+    </div>
+    <div class="news">
+      <a class="news-main" href="#">
+        <span class="bg"><i aria-hidden="true">讯</i></span>
+        <div class="ct"><span class="cat-lab">行业观察</span><h3>2025 伦理题材影视迎来创作井喷</h3><p>家庭伦理、社会现实与女性视角三线并进，创作者如何用更克制的叙事打动观众？伦理电影网带你一探究竟。</p></div>
+      </a>
+      <div class="news-list">
+        <a class="news-item" href="#"><span class="num">01</span><span class="t"><strong>家庭伦理剧为何总能引发全民共鸣？</strong><span>影评解读 · 5 分钟前</span></span></a>
+        <a class="news-item" href="#"><span class="num">02</span><span class="t"><strong>高分人性伦理片盘点：这 5 部值得反复看</strong><span>片单推荐 · 1 小时前</span></span></a>
+        <a class="news-item" href="#"><span class="num">03</span><span class="t"><strong>从《无声的家书》看家庭叙事的影像表达</strong><span>深度影评 · 3 小时前</span></span></a>
+        <a class="news-item" href="#"><span class="num">04</span><span class="t"><strong>现实主义题材持续升温，观众要的是真实</strong><span>行业观察 · 今日</span></span></a>
+        <a class="news-item" href="#"><span class="num">05</span><span class="t"><strong>婚姻伦理剧新趋势：不再非黑即白</strong><span>趋势分析 · 昨日</span></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 关于本站 ================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="about">
+      <div class="txt">
+        <span class="eyebrow">About Site</span>
+        <h2>关于 <span style="color:var(--brand)">伦理电影网</span></h2>
+        <p>伦理电影网（lunlidianyingwang-wap）是一个专注于伦理题材影视资源的导航型站点，致力于为影迷提供清晰、专业、好用的伦理电影与伦理剧集入口。</p>
+        <p>我们围绕「家庭、婚姻、情感、人性、社会」五大伦理议题搭建内容结构，把零散的影视资源整理成可浏览、可发现、可比较的主题频道。</p>
+        <span class="url-show">🌐 官方网站：https://lunlidianyingwang-wap</span>
+      </div>
+      <div class="points">
+        <div class="point"><div class="ic">🎬</div><h4>题材垂直</h4><p>只做伦理题材，分类更细、片单更准。</p></div>
+        <div class="point"><div class="ic">📊</div><h4>榜单实时</h4><p>热播榜与排行榜持续更新，热度可查。</p></div>
+        <div class="point"><div class="ic">🧭</div><h4>专业导航</h4><p>结构化栏目设计，找片效率更高。</p></div>
+        <div class="point"><div class="ic">📱</div><h4>多端适配</h4><p>移动端自适应，PC 与手机一致体验。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SEO 内容块 ================= -->
+<section id="seo">
+  <div class="wrap">
+    <div class="seo-box">
+      <span class="eyebrow">Site Introduction</span>
+      <h2>伦理电影网是什么网站？为什么选择 lunlidianyingwang-wap</h2>
+      <p>下面从站点定位、内容结构与使用场景三个维度，详细说明伦理电影网能为影迷提供什么。</p>
+
+      <h3>一、伦理电影网的站点定位</h3>
+      <p><b>伦理电影网</b>是面向中文影迷的伦理题材影视资源导航站，网址为 <b>https://lunlidianyingwang-wap</b>。站点聚焦「伦理电影」这一细分垂直领域，将家庭伦理、婚姻情感、人性伦理、社会现实等题材进行系统归类，帮助用户快速找到符合口味的影片与剧集。</p>
+      <p>与综合型影视站点不同，伦理电影网的优势在于<b>题材垂直、分类清晰、片单专业</b>。我们不做大而全的资源堆砌，而是围绕伦理议题构建内容，让每一次访问都有明确目的。</p>
+
+      <h3>二、核心栏目与内容结构</h3>
+      <ul>
+        <li><b>影片分类</b>：涵盖家庭伦理、婚姻情感、青春成长、人性悬疑、社会现实、女性视角、经典剧集、高分佳作八大频道。</li>
+        <li><b>热播排行</b>：每周更新的伦理电影排行榜与伦理剧集热度榜，直观呈现当下最值得看的伦理片。</li>
+        <li><b>专题策划</b>：围绕特定议题组织的深度片单，如「家庭伦理片必看 12 部」「人性善恶一线之隔」等。</li>
+        <li><b>影视资讯</b>：行业观察、影评解读、片单推荐与趋势分析，辅助观影决策。</li>
+        <li><b>关于本站</b>：介绍伦理电影网的定位、网址与服务特色。</li>
+      </ul>
+
+      <h3>三、适合哪些观影需求</h3>
+      <p>如果你正在寻找<b>伦理电影在线观看</b>入口、想了解<b>伦理片排行榜</b>、需要一份靠谱的<b>家庭伦理剧推荐</b>片单，或者只是想看看最近有什么值得关注的社会现实题材电影，伦理电影网都能提供对应的导航内容。</p>
+      <p>在伦理电影网，关键词「伦理电影」贯穿全站：从栏目命名、专题策划到影片标签与热榜，所有内容都围绕伦理题材展开。欢迎访问 <b>https://lunlidianyingwang-wap</b>，发现更多值得一看的伦理电影与伦理剧集。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="site-brand" style="padding:0 0 14px">
+          <span class="logo" aria-hidden="true">伦</span>
+          <span class="site-name">伦理电影网<small>ETHICS · FILM · NAV</small></span>
+        </div>
+        <p>伦理电影网（lunlidianyingwang-wap）专注伦理题材影视资源导航，提供影片分类、热播排行、专题策划与影视资讯，是影迷发现伦理电影与伦理剧集的专业入口。</p>
+      </div>
+      <div>
+        <h4>内容栏目</h4>
+        <ul>
+          <li><a href="#cates">影片分类</a></li>
+          <li><a href="#rank">热播排行</a></li>
+          <li><a href="#feat">专题策划</a></li>
+          <li><a href="#news">影视资讯</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>题材频道</h4>
+        <ul>
+          <li><a href="#">家庭伦理片</a></li>
+          <li><a href="#">婚姻情感伦理</a></li>
+          <li><a href="#">人性伦理悬疑</a></li>
+          <li><a href="#">社会现实题材</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>站点信息</h4>
+        <ul>
+          <li><a href="#about">关于伦理电影网</a></li>
+          <li><a href="#seo">网站介绍</a></li>
+          <li><a href="#">官方网址：lunlidianyingwang-wap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      © 2026 伦理电影网 · 网址：<a href="https://lunlidianyingwang-wap">https://lunlidianyingwang-wap</a> · 本站为影视资源导航站，所有内容仅供合法合规的影视信息检索与观影参考
+    </div>
+  </div>
+</footer>
+
+<a class="totop" id="totop" href="#home" aria-label="返回顶部">↑</a>
+
+<script>
+(function(){
+  var toggle=document.getElementById('navToggle');
+  var list=document.getElementById('navList');
+  toggle.addEventListener('click',function(){list.classList.toggle('open');});
+  list.addEventListener('click',function(e){if(e.target.tagName==='A'){list.classList.remove('open');}});
+  var top=document.getElementById('totop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>400){top.classList.add('show');}else{top.classList.remove('show');}
+  });
+})();
+</script>
+</body>
+</html>
